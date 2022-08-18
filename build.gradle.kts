@@ -36,7 +36,7 @@ plugins {
     id("java-library")
 }
 
-group = "org.example"
+group = "net.crazy"
 version = "1.0.0"
 
 plugins.apply("net.labymod.gradle.addon")

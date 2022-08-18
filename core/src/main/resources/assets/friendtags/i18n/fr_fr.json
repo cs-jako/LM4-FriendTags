@@ -1,0 +1,13 @@
+{
+  "friendtags": {
+    "settings": {
+      "name": "Friend Tags",
+      "enabled": {
+        "name": "Activé"
+      },
+      "format": {
+        "name": "Format des tags"
+      }
+    }
+  }
+}

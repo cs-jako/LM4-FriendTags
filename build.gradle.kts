@@ -60,11 +60,13 @@ subprojects {
 
 addon {
     addonInfo {
-        namespace("example")
-        displayName("Example Addon")
-        author("Example Author")
-        description("An Example Description!")
-        version(System.getenv().getOrDefault("VERSION", "0.0.0"))
+        namespace("friendtags")
+        displayName("Friend Tags")
+        author("CrazySchnetzler, Mineflash07")
+        description("With this addon you see a tag above the head of labymod chat friends.")
+        iconUrl("https://dl.labymod.net/latest/addons/72115a66-1f9b-4cf0-b346-918075847a7d/icon.png",
+                project(":core"))
+        version("1")
 
         //you can add maven dependencies here. the dependencies will then be downloaded by labymod.
         //mavenDependencies().add(MavenDependency("https://repo.maven.apache.org/maven2/", "com.google.guava:guava:31.1-jre"))

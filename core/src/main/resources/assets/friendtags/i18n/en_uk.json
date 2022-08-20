@@ -3,24 +3,24 @@
     "settings": {
       "name": "Friend Tags",
       "enabled": {
-        "name": "Aktiviert"
+        "name": "Enabled"
       },
       "tagSetting": {
-        "name": "Tag Einstellungen",
+        "name": "Tag Settings",
         "format": {
           "name": "Format"
         },
         "location": {
-          "name": "Tag Position"
+          "name": "Tag Location"
         }
       },
       "starSetting": {
-        "name": "Stern Einstellungen",
+        "name": "Star Settings",
         "starColor": {
-          "name": "Stern Farbe"
+          "name": "Star colour"
         },
         "location": {
-          "name": "Stern Position"
+          "name": "Star Location"
         }
       }
     }

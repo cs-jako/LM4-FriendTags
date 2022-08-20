@@ -5,8 +5,23 @@
       "enabled": {
         "name": "Enabled"
       },
-      "format": {
-        "name": "Tag Format"
+      "tagSetting": {
+        "name": "Tag Settings",
+        "format": {
+          "name": "Format"
+        },
+        "location": {
+          "name": "Tag Location"
+        }
+      },
+      "starSetting": {
+        "name": "Star Settings",
+        "starColor": {
+          "name": "Star color"
+        },
+        "location": {
+          "name": "Star Location"
+        }
       }
     }
   }

@@ -1,0 +1,28 @@
+{
+  "friendtags": {
+    "settings": {
+      "name": "Friend Tags",
+      "enabled": {
+        "name": "Kveikt"
+      },
+      "tagSetting": {
+        "name": "Innstillingar Merksins",
+        "format": {
+          "name": "Sniði"
+        },
+        "location": {
+          "name": "Staðsetning Merksins"
+        }
+      },
+      "starSetting": {
+        "name": "Innstillingar Stjörnu",
+        "starColor": {
+          "name": "Litur Stjörnu"
+        },
+        "location": {
+          "name": "Staðsetning Stjörnu"
+        }
+      }
+    }
+  }
+}

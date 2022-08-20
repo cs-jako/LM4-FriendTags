@@ -1,0 +1,28 @@
+{
+  "friendtags": {
+    "settings": {
+      "name": "Friend Tags",
+      "enabled": {
+        "name": "Aktivert"
+      },
+      "tagSetting": {
+        "name": "Tag Innstillinger",
+        "format": {
+          "name": "Format"
+        },
+        "location": {
+          "name": "Tag Plassering"
+        }
+      },
+      "starSetting": {
+        "name": "Stjerne Innstillinger",
+        "starColor": {
+          "name": "Stjerne farge"
+        },
+        "location": {
+          "name": "Stjerne Plassering"
+        }
+      }
+    }
+  }
+}

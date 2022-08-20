@@ -16,12 +16,13 @@ public class TagSetting extends Config {
   @SwitchSetting
   private final ConfigProperty<Boolean> enabled = new ConfigProperty<>(true);
 
-  @SpriteSlot()
+  @SpriteSlot(x = 1)
   @MethodOrder(after = "enabled")
   @TextFieldSetting
   private final ConfigProperty<String> format = new ConfigProperty<>("&lFriend");
 
   @MethodOrder(after = "format")
+  @SpriteSlot(x = 2)
   @DropdownSetting
   private final ConfigProperty<NameTagLocation> location = new ConfigProperty<>(NameTagLocation.ABOVE_NAME);
 

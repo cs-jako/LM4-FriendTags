@@ -6,6 +6,7 @@ import net.labymod.api.client.gui.screen.widget.widgets.input.color.ColorPickerW
 import net.labymod.api.client.gui.screen.widget.widgets.input.dropdown.DropdownWidget.DropdownSetting;
 import net.labymod.api.configuration.loader.Config;
 import net.labymod.api.configuration.loader.annotation.ParentSwitch;
+import net.labymod.api.configuration.loader.annotation.SpriteSlot;
 import net.labymod.api.configuration.loader.property.ConfigProperty;
 import net.labymod.api.util.MethodOrder;
 import java.awt.*;
@@ -17,10 +18,12 @@ public class StarSetting extends Config {
   private final ConfigProperty<Boolean> enabled = new ConfigProperty<>(true);
 
   @MethodOrder(after = "enabled")
+  @SpriteSlot(x = 1, y = 1)
   @ColorPickerSetting
   private final ConfigProperty<Integer> starColor = new ConfigProperty<>(Color.YELLOW.getRGB());
 
   @MethodOrder(after = "starColor")
+  @SpriteSlot(x = 2)
   @DropdownSetting
   private final ConfigProperty<NameTagLocation> location = new ConfigProperty<>(NameTagLocation.RIGHT_OF_NAME);
 

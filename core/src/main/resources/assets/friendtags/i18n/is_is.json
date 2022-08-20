@@ -5,6 +5,11 @@
       "enabled": {
         "name": "Kveikt"
       },
+      "header": {
+        "settings": {
+          "name": "Innstillingar"
+        }
+      },
       "tagSetting": {
         "name": "Innstillingar Merksins",
         "format": {

@@ -46,6 +46,9 @@ public class StarTag extends IconTag {
 
   @Override
   public boolean isVisible(LivingEntity livingEntity) {
+    if (!addon.configuration().star().isEnabled())
+      return false;
+
     if (!addon.configuration().star().getLocation().equals(location))
       return false;
 

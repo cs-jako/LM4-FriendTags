@@ -46,6 +46,9 @@ public class FriendTag extends NameTag {
 
   @Override
   public boolean isVisible(LivingEntity livingEntity) {
+    if (!addon.configuration().tag().isEnabled())
+      return false;
+
     if (!addon.configuration().tag().getLocation().equals(location))
       return false;
 

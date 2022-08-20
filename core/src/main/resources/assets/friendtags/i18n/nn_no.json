@@ -5,6 +5,11 @@
       "enabled": {
         "name": "Aktivert"
       },
+      "header": {
+        "settings": {
+          "name": "Innstillinger"
+        }
+      },
       "tagSetting": {
         "name": "Tag Innstillinger",
         "format": {

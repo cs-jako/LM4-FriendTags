@@ -1,0 +1,33 @@
+{
+  "friendtags": {
+    "settings": {
+      "name": "sƃɐ┴ puǝᴉɹℲ",
+      "enabled": {
+        "name": "pǝlqɐuƎ"
+      },
+      "header": {
+        "settings": {
+          "name": "sƃuᴉʇʇǝS"
+        }
+      },
+      "tagSetting": {
+        "name": "sƃuᴉʇʇǝS ƃɐ┴",
+        "format": {
+          "name": "ʇɐɯɹoℲ"
+        },
+        "location": {
+          "name": "uoᴉʇɐɔo˥ ƃɐ┴"
+        }
+      },
+      "starSetting": {
+        "name": "sƃuᴉʇʇǝS ɹɐʇS",
+        "starColor": {
+          "name": "ɹoloɔ ɹɐʇS"
+        },
+        "location": {
+          "name": "uoᴉʇɐɔo˥ ɹɐʇS"
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ on:
 env:
   PUBLIC_RELEASE_BUILD: true
   PUBLIC_RELEASE_BUILD_TOKEN: ${{ secrets.PUBLIC_RELEASE_BUILD_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
@@ -30,3 +31,16 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/*
+      - name: Remove older releases
+        uses: dev-drprasad/delete-older-releases@v0.2.0
+        with:
+          keep_latest: 0
+          delete_tags: true
+      - name: Publish Artifacts
+        uses: actions/create-release@v1
+        with:
+          draft: false
+          prerelease: false
+          release_name: ${{ github.event.repository.name }}
+          tag_name: "Latest"
+          body_path: CHANGELOG.md

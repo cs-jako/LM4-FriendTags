@@ -1,3 +1,1 @@
-- Updated to the latest addon api
-- Updated Icon path to comply with the latest API update
-- Added Setting + Icon for RenderBackgroundEvent
+Added & Updated Languages

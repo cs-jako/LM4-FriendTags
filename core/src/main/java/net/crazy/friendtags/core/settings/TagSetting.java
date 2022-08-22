@@ -27,6 +27,7 @@ public class TagSetting extends Config {
   private final ConfigProperty<NameTagLocation> location = new ConfigProperty<>(NameTagLocation.ABOVE_NAME);
 
   @MethodOrder(after = "location")
+  @SpriteSlot(y = 2)
   @SwitchSetting
   private final ConfigProperty<Boolean> renderBackground = new ConfigProperty<>(Boolean.TRUE);
 

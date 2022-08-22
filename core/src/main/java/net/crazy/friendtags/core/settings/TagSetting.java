@@ -26,6 +26,10 @@ public class TagSetting extends Config {
   @DropdownSetting
   private final ConfigProperty<NameTagLocation> location = new ConfigProperty<>(NameTagLocation.ABOVE_NAME);
 
+  @MethodOrder(after = "location")
+  @SwitchSetting
+  private final ConfigProperty<Boolean> renderBackground = new ConfigProperty<>(Boolean.TRUE);
+
   public boolean isEnabled() {
     return enabled.get();
   }
@@ -36,5 +40,9 @@ public class TagSetting extends Config {
 
   public NameTagLocation getLocation() {
     return location.get();
+  }
+
+  public boolean background() {
+    return this.renderBackground.get();
   }
 }

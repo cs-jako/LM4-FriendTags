@@ -11,21 +11,24 @@
         }
       },
       "tagSetting": {
-        "name": "Tag Einstellungen",
+        "name": "Tag-Einstellungen",
         "format": {
           "name": "Format"
         },
         "location": {
-          "name": "Tag Position"
+          "name": "Tag-Position"
+        },
+        "renderBackground": {
+          "name": "Hintergrund rendern"
         }
       },
       "starSetting": {
-        "name": "Stern Einstellungen",
+        "name": "Stern-Einstellungen",
         "starColor": {
-          "name": "Stern Farbe"
+          "name": "Sternfarbe"
         },
         "location": {
-          "name": "Stern Position"
+          "name": "Stern-Position"
         }
       }
     }

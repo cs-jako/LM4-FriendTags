@@ -3,32 +3,32 @@
     "settings": {
       "name": "Friend Tags",
       "enabled": {
-        "name": "Aktivert"
+        "name": "Aktiviert"
       },
       "header": {
         "settings": {
-          "name": "Innstillinger"
+          "name": "Einstellungen"
         }
       },
       "tagSetting": {
-        "name": "Tag Innstillinger",
+        "name": "Tag-Einstellungen",
         "format": {
           "name": "Format"
         },
         "location": {
-          "name": "Tag Plassering"
+          "name": "Tag-Position"
         },
         "renderBackground": {
-          "name": "Render Background"
+          "name": "Hintagrund rendern"
         }
       },
       "starSetting": {
-        "name": "Stjerne Innstillinger",
+        "name": "Stern-Einstellungen",
         "starColor": {
-          "name": "Stjerne farge"
+          "name": "Sternforb"
         },
         "location": {
-          "name": "Stjerne Plassering"
+          "name": "Stern-Position"
         }
       }
     }

@@ -7,25 +7,28 @@
       },
       "header": {
         "settings": {
-          "name": "Settings"
+          "name": "Options"
         }
       },
       "tagSetting": {
-        "name": "Tag Settings",
+        "name": "Tag Options",
         "format": {
           "name": "Format"
         },
         "location": {
-          "name": "Tag Location"
+          "name": "Tag Position"
+        },
+        "renderBackground": {
+          "name": "Render Background"
         }
       },
       "starSetting": {
-        "name": "Star Settings",
+        "name": "Star Options",
         "starColor": {
           "name": "Star colour"
         },
         "location": {
-          "name": "Star Location"
+          "name": "Star Position"
         }
       }
     }

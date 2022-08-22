@@ -1,34 +1,34 @@
 {
   "friendtags": {
     "settings": {
-      "name": "Friend Tags",
+      "name": "フレンドタグ",
       "enabled": {
-        "name": "Aktivert"
+        "name": "有効"
       },
       "header": {
         "settings": {
-          "name": "Innstillinger"
+          "name": "設定"
         }
       },
       "tagSetting": {
-        "name": "Tag Innstillinger",
+        "name": "タグの設定",
         "format": {
-          "name": "Format"
+          "name": "フォーマット"
         },
         "location": {
-          "name": "Tag Plassering"
+          "name": "タグのポジション"
         },
         "renderBackground": {
           "name": "Render Background"
         }
       },
       "starSetting": {
-        "name": "Stjerne Innstillinger",
+        "name": "星の設定",
         "starColor": {
-          "name": "Stjerne farge"
+          "name": "星の色"
         },
         "location": {
-          "name": "Stjerne Plassering"
+          "name": "星のポジション"
         }
       }
     }

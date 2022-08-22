@@ -3,32 +3,32 @@
     "settings": {
       "name": "Friend Tags",
       "enabled": {
-        "name": "Aktivert"
+        "name": "Включено"
       },
       "header": {
         "settings": {
-          "name": "Innstillinger"
+          "name": "Настройки"
         }
       },
       "tagSetting": {
-        "name": "Tag Innstillinger",
+        "name": "Настройки тега",
         "format": {
-          "name": "Format"
+          "name": "Формат"
         },
         "location": {
-          "name": "Tag Plassering"
+          "name": "Положение тега"
         },
         "renderBackground": {
-          "name": "Render Background"
+          "name": "Отображать фон"
         }
       },
       "starSetting": {
-        "name": "Stjerne Innstillinger",
+        "name": "Настройки значка",
         "starColor": {
-          "name": "Stjerne farge"
+          "name": "Цвет значка"
         },
         "location": {
-          "name": "Stjerne Plassering"
+          "name": "Положение значка"
         }
       }
     }

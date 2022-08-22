@@ -17,6 +17,9 @@
         },
         "location": {
           "name": "Lokalizacja Tagów"
+        },
+        "renderBackground": {
+          "name": "Render Background"
         }
       },
       "starSetting": {

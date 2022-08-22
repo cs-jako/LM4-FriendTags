@@ -7,6 +7,7 @@ import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.tags.IconTag;
 import net.labymod.api.client.gui.icon.Icon;
 import net.labymod.api.client.render.matrix.Stack;
+import java.awt.*;
 
 public class StarTag extends IconTag {
 
@@ -55,8 +56,33 @@ public class StarTag extends IconTag {
     return addon.isVisible(livingEntity);
   }
 
+  private int r = 255, g = 0, b = 0;
+
   @Override
   public int getColor(LivingEntity livingEntity) {
+    if (addon.configuration().star().rgb()) {
+      return rgbEffect().getRGB();
+    }
+
     return addon.configuration().star().getColor();
+  }
+
+  private Color rgbEffect() {
+    if (r > 0 && b == 0) {
+      r--;
+      g++;
+    }
+
+    if (g > 0 && r == 0) {
+      g--;
+      b++;
+    }
+
+    if (b > 0 && g == 0) {
+      r++;
+      b--;
+    }
+
+    return new Color(r, g, b);
   }
 }

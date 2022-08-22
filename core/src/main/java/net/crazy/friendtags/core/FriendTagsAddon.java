@@ -2,6 +2,7 @@ package net.crazy.friendtags.core;
 
 import com.google.inject.Singleton;
 import net.crazy.friendtags.core.enums.NameTagLocation;
+import net.crazy.friendtags.core.events.NameTagEvents;
 import net.crazy.friendtags.core.tags.FriendTag;
 import net.crazy.friendtags.core.tags.StarTag;
 import net.labymod.api.addon.LabyAddon;
@@ -40,6 +41,8 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
         StarTag.create(this, NameTagLocation.LEFT_OF_NAME));
     tagRegistry.register("friendtags_star", PositionType.RIGHT_TO_NAME,
         StarTag.create(this, NameTagLocation.RIGHT_OF_NAME));
+
+    this.registerListener(NameTagEvents.class);
   }
 
   @Override

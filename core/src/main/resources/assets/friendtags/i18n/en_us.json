@@ -17,6 +17,9 @@
         },
         "location": {
           "name": "Tag Location"
+        },
+        "renderBackground": {
+          "name": "Render Background"
         }
       },
       "starSetting": {

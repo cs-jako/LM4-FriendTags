@@ -59,6 +59,9 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
       return false;
     }
 
+    if (entity.getUniqueId().equals(labyAPI().minecraft().clientPlayer().getUniqueId()))
+      return false;
+
     double distance = labyAPI().minecraft().clientPlayer().getDistanceSquared(entity);
 
     if (distance > (double) (64.0F * 64.0F)) {

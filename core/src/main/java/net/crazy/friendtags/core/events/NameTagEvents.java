@@ -17,7 +17,7 @@ public class NameTagEvents {
     if (!addon.configuration().enabled().get())
       return;
 
-    if (!addon.configuration().tag().background())
+    if (addon.configuration().tag().background())
       return;
 
     event.setCancelled(true);

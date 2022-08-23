@@ -67,9 +67,6 @@ addon {
         iconUrl("https://dl.labymod.net/latest/addons/72115a66-1f9b-4cf0-b346-918075847a7d/icon.png",
                 project(":core"))
         version("2.2")
-
-        //you can add maven dependencies here. the dependencies will then be downloaded by labymod.
-        //mavenDependencies().add(MavenDependency("https://repo.maven.apache.org/maven2/", "com.google.guava:guava:31.1-jre"))
     }
     
     internalRelease()

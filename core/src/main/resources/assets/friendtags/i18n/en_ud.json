@@ -16,7 +16,10 @@
           "name": "ʇɐɯɹoℲ"
         },
         "location": {
-          "name": "uoᴉʇɐɔo˥ ƃɐ┴"
+          "name": "uoᴉʇᴉsoԀ ƃɐ┴"
+        },
+        "renderBackground": {
+          "name": "punoɹƃʞɔɐq ɹǝpuǝɹ"
         }
       },
       "starSetting": {
@@ -25,7 +28,15 @@
           "name": "ɹoloɔ ɹɐʇS"
         },
         "location": {
-          "name": "uoᴉʇɐɔo˥ ɹɐʇS"
+          "name": "uoᴉʇᴉsoԀ ɹɐʇS"
+        },
+        "rgb": {
+          "name": "ʇɔǝɟɟƎ qפɹ"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§clɐʇuǝɯᴉɹǝdxƎ"
+          }
         }
       }
     }

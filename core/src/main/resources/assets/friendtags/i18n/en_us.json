@@ -16,7 +16,7 @@
           "name": "Format"
         },
         "location": {
-          "name": "Tag Location"
+          "name": "Tag Position"
         },
         "renderBackground": {
           "name": "Render Background"
@@ -28,7 +28,15 @@
           "name": "Star color"
         },
         "location": {
-          "name": "Star Location"
+          "name": "Star Position"
+        },
+        "rgb": {
+          "name": "RGB Effect"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§cExperimental"
+          }
         }
       }
     }

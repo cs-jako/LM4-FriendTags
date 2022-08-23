@@ -3,39 +3,39 @@
     "settings": {
       "name": "Friend Tags",
       "enabled": {
-        "name": "Włączone"
+        "name": "Включено"
       },
       "header": {
         "settings": {
-          "name": "Ustawienia"
+          "name": "Настройки"
         }
       },
       "tagSetting": {
-        "name": "Ustawienia Tagów",
+        "name": "Настройки тега",
         "format": {
-          "name": "Format"
+          "name": "Формат"
         },
         "location": {
-          "name": "Tag Position"
+          "name": "Положение тега"
         },
         "renderBackground": {
-          "name": "Render Background"
+          "name": "Отображать фон"
         }
       },
       "starSetting": {
-        "name": "Ustawienia Gwiazdy",
+        "name": "Настройки значка",
         "starColor": {
-          "name": "Kolor gwiazdy"
+          "name": "Цвет значка"
         },
         "location": {
-          "name": "Star Position"
+          "name": "Положение значка"
         },
         "rgb": {
-          "name": "RGB Effect"
+          "name": "Эффект RGB"
         },
         "header": {
           "experimental": {
-            "name": "§l§cExperimental"
+            "name": "§l§cЭкспериментально"
           }
         }
       }

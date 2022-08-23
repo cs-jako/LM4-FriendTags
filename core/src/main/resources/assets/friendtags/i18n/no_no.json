@@ -16,7 +16,10 @@
           "name": "Format"
         },
         "location": {
-          "name": "Tag Plassering"
+          "name": "Tag Position"
+        },
+        "renderBackground": {
+          "name": "Render Background"
         }
       },
       "starSetting": {
@@ -25,7 +28,15 @@
           "name": "Stjerne farge"
         },
         "location": {
-          "name": "Stjerne Plassering"
+          "name": "Star Position"
+        },
+        "rgb": {
+          "name": "RGB Effect"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§cExperimental"
+          }
         }
       }
     }

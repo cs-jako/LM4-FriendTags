@@ -1,17 +1,17 @@
 {
   "friendtags": {
     "settings": {
-      "name": "Friend Tags",
+      "name": "Ven Tags",
       "enabled": {
-        "name": "Włączone"
+        "name": "Aktiveret"
       },
       "header": {
         "settings": {
-          "name": "Ustawienia"
+          "name": "Indstillinger"
         }
       },
       "tagSetting": {
-        "name": "Ustawienia Tagów",
+        "name": "Tag Indstillinger",
         "format": {
           "name": "Format"
         },
@@ -19,23 +19,23 @@
           "name": "Tag Position"
         },
         "renderBackground": {
-          "name": "Render Background"
+          "name": "Vis Baggrund"
         }
       },
       "starSetting": {
-        "name": "Ustawienia Gwiazdy",
+        "name": "Stjerne Indstillinger",
         "starColor": {
-          "name": "Kolor gwiazdy"
+          "name": "Stjerne farve"
         },
         "location": {
-          "name": "Star Position"
+          "name": "Stjerne Position"
         },
         "rgb": {
-          "name": "RGB Effect"
+          "name": "RGB Effekt"
         },
         "header": {
           "experimental": {
-            "name": "§l§cExperimental"
+            "name": "§l§cEksperimentel"
           }
         }
       }

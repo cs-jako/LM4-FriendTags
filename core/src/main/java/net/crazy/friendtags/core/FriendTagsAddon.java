@@ -24,22 +24,22 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
 
     TagRegistry tagRegistry = labyAPI().tagRegistry();
 
-    tagRegistry.register("friendtags_tag", PositionType.ABOVE_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.ABOVE_NAME,
         FriendTag.create(this, NameTagLocation.ABOVE_NAME));
-    tagRegistry.register("friendtags_tag", PositionType.BELOW_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.BELOW_NAME,
         FriendTag.create(this, NameTagLocation.BELOW_NAME));
-    tagRegistry.register("friendtags_tag", PositionType.LEFT_TO_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.LEFT_TO_NAME,
         FriendTag.create(this, NameTagLocation.LEFT_OF_NAME));
-    tagRegistry.register("friendtags_tag", PositionType.RIGHT_TO_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.RIGHT_TO_NAME,
         FriendTag.create(this, NameTagLocation.RIGHT_OF_NAME));
 
-    tagRegistry.register("friendtags_star", PositionType.ABOVE_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.ABOVE_NAME,
         StarTag.create(this, NameTagLocation.ABOVE_NAME));
-    tagRegistry.register("friendtags_star", PositionType.BELOW_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.BELOW_NAME,
         StarTag.create(this, NameTagLocation.BELOW_NAME));
-    tagRegistry.register("friendtags_star", PositionType.LEFT_TO_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.LEFT_TO_NAME,
         StarTag.create(this, NameTagLocation.LEFT_OF_NAME));
-    tagRegistry.register("friendtags_star", PositionType.RIGHT_TO_NAME,
+    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.RIGHT_TO_NAME,
         StarTag.create(this, NameTagLocation.RIGHT_OF_NAME));
 
     this.registerListener(NameTagEvents.class);

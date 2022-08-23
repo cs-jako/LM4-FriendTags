@@ -1,41 +1,41 @@
 {
   "friendtags": {
     "settings": {
-      "name": "Friend Tags",
+      "name": "Arkadaş Etiketleri",
       "enabled": {
-        "name": "Włączone"
+        "name": "Etkin"
       },
       "header": {
         "settings": {
-          "name": "Ustawienia"
+          "name": "Ayarlar"
         }
       },
       "tagSetting": {
-        "name": "Ustawienia Tagów",
+        "name": "Etiket Ayarları",
         "format": {
           "name": "Format"
         },
         "location": {
-          "name": "Tag Position"
+          "name": "Etiket Pozisyonu"
         },
         "renderBackground": {
-          "name": "Render Background"
+          "name": "Render Arkaplanı"
         }
       },
       "starSetting": {
-        "name": "Ustawienia Gwiazdy",
+        "name": "Yıldız Ayarları",
         "starColor": {
-          "name": "Kolor gwiazdy"
+          "name": "Yıldız rengi"
         },
         "location": {
-          "name": "Star Position"
+          "name": "Yıldız Pozisyonu"
         },
         "rgb": {
-          "name": "RGB Effect"
+          "name": "RGB Efekti"
         },
         "header": {
           "experimental": {
-            "name": "§l§cExperimental"
+            "name": "§l§cDeney"
           }
         }
       }

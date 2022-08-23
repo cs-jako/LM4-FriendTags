@@ -3,15 +3,15 @@
     "settings": {
       "name": "Friend Tags",
       "enabled": {
-        "name": "Włączone"
+        "name": "Engeschalded"
       },
       "header": {
         "settings": {
-          "name": "Ustawienia"
+          "name": "Enstellungn"
         }
       },
       "tagSetting": {
-        "name": "Ustawienia Tagów",
+        "name": "Tag Settings",
         "format": {
           "name": "Format"
         },
@@ -23,9 +23,9 @@
         }
       },
       "starSetting": {
-        "name": "Ustawienia Gwiazdy",
+        "name": "Star Settings",
         "starColor": {
-          "name": "Kolor gwiazdy"
+          "name": "Star color"
         },
         "location": {
           "name": "Star Position"

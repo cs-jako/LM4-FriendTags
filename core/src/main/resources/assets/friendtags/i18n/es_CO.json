@@ -1,37 +1,37 @@
 {
   "friendtags": {
     "settings": {
-      "name": "Friend Tags",
+      "name": "Etiquetas de Amigo",
       "enabled": {
-        "name": "Włączone"
+        "name": "Activado"
       },
       "header": {
         "settings": {
-          "name": "Ustawienia"
+          "name": "Configuración"
         }
       },
       "tagSetting": {
-        "name": "Ustawienia Tagów",
+        "name": "Configuración de Etiquetas",
         "format": {
-          "name": "Format"
+          "name": "Formato"
         },
         "location": {
-          "name": "Tag Position"
+          "name": "Posición de Etiqueta"
         },
         "renderBackground": {
-          "name": "Render Background"
+          "name": "Renderizar Fondo"
         }
       },
       "starSetting": {
-        "name": "Ustawienia Gwiazdy",
+        "name": "Ajustes Estrella",
         "starColor": {
-          "name": "Kolor gwiazdy"
+          "name": "Color de estrella"
         },
         "location": {
-          "name": "Star Position"
+          "name": "Posición de Estrella"
         },
         "rgb": {
-          "name": "RGB Effect"
+          "name": "Efecto RVA"
         },
         "header": {
           "experimental": {

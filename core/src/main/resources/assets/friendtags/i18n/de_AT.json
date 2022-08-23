@@ -3,15 +3,15 @@
     "settings": {
       "name": "Friend Tags",
       "enabled": {
-        "name": "Włączone"
+        "name": "Aktiviert"
       },
       "header": {
         "settings": {
-          "name": "Ustawienia"
+          "name": "Einstellungen"
         }
       },
       "tagSetting": {
-        "name": "Ustawienia Tagów",
+        "name": "Tag-Einstellungen",
         "format": {
           "name": "Format"
         },
@@ -19,13 +19,13 @@
           "name": "Tag Position"
         },
         "renderBackground": {
-          "name": "Render Background"
+          "name": "Hintagrund rendern"
         }
       },
       "starSetting": {
-        "name": "Ustawienia Gwiazdy",
+        "name": "Stern-Einstellungen",
         "starColor": {
-          "name": "Kolor gwiazdy"
+          "name": "Sternforb"
         },
         "location": {
           "name": "Star Position"

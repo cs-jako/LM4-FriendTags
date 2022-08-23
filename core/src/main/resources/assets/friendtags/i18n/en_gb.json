@@ -29,6 +29,14 @@
         },
         "location": {
           "name": "Star Position"
+        },
+        "rgb": {
+          "name": "RGB Effect"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§cExperimental"
+          }
         }
       }
     }

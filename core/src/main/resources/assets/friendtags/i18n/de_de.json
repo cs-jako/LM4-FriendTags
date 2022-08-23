@@ -29,6 +29,14 @@
         },
         "location": {
           "name": "Stern-Position"
+        },
+        "rgb": {
+          "name": "RGB-Effekt"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§cExperimentell"
+          }
         }
       }
     }

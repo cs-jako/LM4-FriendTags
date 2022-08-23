@@ -29,6 +29,14 @@
         },
         "location": {
           "name": "星のポジション"
+        },
+        "rgb": {
+          "name": "RGB エフェクト"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§cExperimental"
+          }
         }
       }
     }

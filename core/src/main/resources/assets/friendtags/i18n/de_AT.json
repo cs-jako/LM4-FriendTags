@@ -16,7 +16,7 @@
           "name": "Format"
         },
         "location": {
-          "name": "Tag-Position"
+          "name": "Tag Position"
         },
         "renderBackground": {
           "name": "Hintagrund rendern"
@@ -28,7 +28,15 @@
           "name": "Sternforb"
         },
         "location": {
-          "name": "Stern-Position"
+          "name": "Star Position"
+        },
+        "rgb": {
+          "name": "RGB Effect"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§cExperimental"
+          }
         }
       }
     }

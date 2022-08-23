@@ -29,6 +29,14 @@
         },
         "location": {
           "name": "Положение значка"
+        },
+        "rgb": {
+          "name": "Эффект RGB"
+        },
+        "header": {
+          "experimental": {
+            "name": "§l§cЭкспериментально"
+          }
         }
       }
     }

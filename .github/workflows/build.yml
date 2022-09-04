@@ -10,7 +10,6 @@ on:
 env:
   PUBLIC_RELEASE_BUILD: true
   PUBLIC_RELEASE_BUILD_TOKEN: ${{ secrets.PUBLIC_RELEASE_BUILD_TOKEN }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:

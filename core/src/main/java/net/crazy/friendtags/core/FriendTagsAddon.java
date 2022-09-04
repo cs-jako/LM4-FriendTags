@@ -7,6 +7,7 @@ import net.crazy.friendtags.core.tags.FriendTag;
 import net.crazy.friendtags.core.tags.StarTag;
 import net.labymod.api.addon.LabyAddon;
 import net.labymod.api.client.entity.LivingEntity;
+import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.PositionType;
 import net.labymod.api.client.entity.player.tag.TagRegistry;
 import net.labymod.api.labyconnect.LabyConnect;
@@ -58,6 +59,12 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
     if (entity.isCrouching()) {
       return false;
     }
+
+    if (!(entity instanceof Player))
+      return false;
+
+    if (!isFriend(entity.getUniqueId()))
+      return false;
 
     if (entity.getUniqueId().equals(labyAPI().minecraft().clientPlayer().getUniqueId()))
       return false;

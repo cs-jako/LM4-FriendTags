@@ -2,6 +2,7 @@ package net.crazy.friendtags.core.tags;
 
 import net.crazy.friendtags.core.FriendTagsAddon;
 import net.crazy.friendtags.core.enums.NameTagLocation;
+import net.labymod.api.client.entity.Entity;
 import net.labymod.api.client.entity.LivingEntity;
 import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.tags.IconTag;
@@ -26,7 +27,7 @@ public class StarTag extends IconTag {
   }
 
   @Override
-  public void render(Stack stack, LivingEntity livingEntity) {
+  public void render(Stack stack, Entity livingEntity) {
     if (!addon.configuration().enabled().get())
       return;
 
@@ -46,7 +47,7 @@ public class StarTag extends IconTag {
   }
 
   @Override
-  public boolean isVisible(LivingEntity livingEntity) {
+  public boolean isVisible(Entity livingEntity) {
     if (!addon.configuration().star().isEnabled())
       return false;
 
@@ -59,7 +60,7 @@ public class StarTag extends IconTag {
   private int r = 255, g = 0, b = 0;
 
   @Override
-  public int getColor(LivingEntity livingEntity) {
+  public int getColor(Entity livingEntity) {
     if (addon.configuration().star().rgb()) {
       return rgbEffect().getRGB();
     }

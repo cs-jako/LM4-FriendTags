@@ -3,6 +3,7 @@ package net.crazy.friendtags.core.tags;
 import net.crazy.friendtags.core.FriendTagsAddon;
 import net.crazy.friendtags.core.enums.NameTagLocation;
 import net.kyori.adventure.text.Component;
+import net.labymod.api.client.entity.Entity;
 import net.labymod.api.client.entity.LivingEntity;
 import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.tags.NameTag;
@@ -23,7 +24,7 @@ public class FriendTag extends NameTag {
   }
 
   @Override
-  protected RenderableComponent renderableComponent(LivingEntity livingEntity) {
+  protected RenderableComponent renderableComponent(Entity livingEntity) {
     if (!addon.configuration().enabled().get())
       return null;
 
@@ -45,7 +46,7 @@ public class FriendTag extends NameTag {
   }
 
   @Override
-  public boolean isVisible(LivingEntity livingEntity) {
+  public boolean isVisible(Entity livingEntity) {
     if (!addon.configuration().tag().isEnabled())
       return false;
 

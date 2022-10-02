@@ -6,6 +6,7 @@ import net.crazy.friendtags.core.events.NameTagEvents;
 import net.crazy.friendtags.core.tags.FriendTag;
 import net.crazy.friendtags.core.tags.StarTag;
 import net.labymod.api.addon.LabyAddon;
+import net.labymod.api.client.entity.Entity;
 import net.labymod.api.client.entity.LivingEntity;
 import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.PositionType;
@@ -51,7 +52,7 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
     return AddonConfiguration.class;
   }
 
-  public boolean isVisible(LivingEntity entity) {
+  public boolean isVisible(Entity entity) {
     if (entity.isInvisible()) {
       return false;
     }

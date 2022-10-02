@@ -37,7 +37,7 @@ plugins {
 }
 
 group = "net.crazy"
-version = "2.2.1"
+version = "2.2.2"
 
 plugins.apply("net.labymod.gradle.addon")
 
@@ -66,7 +66,7 @@ addon {
         description("With this addon you see a tag above the head of labymod chat friends.")
         iconUrl("https://dl.labymod.net/latest/addons/72115a66-1f9b-4cf0-b346-918075847a7d/icon.png",
                 project(":core"))
-        version("2.2.1")
+        version("2.2.2")
     }
     
     internalRelease()

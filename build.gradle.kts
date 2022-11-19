@@ -28,7 +28,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("net.labymod.gradle", "addon", "0.2.45")
+        classpath("net.labymod.gradle", "addon", "0.2.51")
     }
 }
 
@@ -66,7 +66,7 @@ addon {
         description("With this addon you see a tag above the head of labymod chat friends.")
         iconUrl("https://dl.labymod.net/latest/addons/72115a66-1f9b-4cf0-b346-918075847a7d/icon.png",
                 project(":core"))
-        version("2.2.2")
+        version("2.2.3")
     }
     
     internalRelease()

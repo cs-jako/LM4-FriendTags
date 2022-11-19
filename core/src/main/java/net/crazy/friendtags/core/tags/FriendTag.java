@@ -4,7 +4,6 @@ import net.crazy.friendtags.core.FriendTagsAddon;
 import net.crazy.friendtags.core.enums.NameTagLocation;
 import net.kyori.adventure.text.Component;
 import net.labymod.api.client.entity.Entity;
-import net.labymod.api.client.entity.LivingEntity;
 import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.tags.NameTag;
 import net.labymod.api.client.render.font.RenderableComponent;

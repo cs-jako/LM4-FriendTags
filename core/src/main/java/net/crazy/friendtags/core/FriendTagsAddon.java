@@ -1,23 +1,20 @@
 package net.crazy.friendtags.core;
 
-import com.google.inject.Singleton;
 import net.crazy.friendtags.core.enums.NameTagLocation;
 import net.crazy.friendtags.core.events.NameTagEvents;
 import net.crazy.friendtags.core.tags.FriendTag;
 import net.crazy.friendtags.core.tags.StarTag;
 import net.labymod.api.addon.LabyAddon;
 import net.labymod.api.client.entity.Entity;
-import net.labymod.api.client.entity.LivingEntity;
 import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.PositionType;
 import net.labymod.api.client.entity.player.tag.TagRegistry;
 import net.labymod.api.labyconnect.LabyConnect;
 import net.labymod.api.labyconnect.protocol.model.friend.Friend;
-import net.labymod.api.models.addon.annotation.AddonListener;
+import net.labymod.api.models.addon.annotation.AddonMain;
 import java.util.UUID;
 
-@Singleton
-@AddonListener
+@AddonMain
 public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
 
   @Override
@@ -44,7 +41,7 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
     tagRegistry.registerBefore("badge", "friendtags_star", PositionType.RIGHT_TO_NAME,
         StarTag.create(this, NameTagLocation.RIGHT_OF_NAME));
 
-    this.registerListener(NameTagEvents.class);
+    this.registerListener(new NameTagEvents(this));
   }
 
   @Override

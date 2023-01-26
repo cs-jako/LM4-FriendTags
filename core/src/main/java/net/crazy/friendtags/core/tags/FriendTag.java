@@ -2,11 +2,12 @@ package net.crazy.friendtags.core.tags;
 
 import net.crazy.friendtags.core.FriendTagsAddon;
 import net.crazy.friendtags.core.enums.NameTagLocation;
-import net.kyori.adventure.text.Component;
+import net.labymod.api.client.component.Component;
 import net.labymod.api.client.entity.Entity;
 import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.tags.NameTag;
 import net.labymod.api.client.render.font.RenderableComponent;
+import org.jetbrains.annotations.Nullable;
 
 public class FriendTag extends NameTag {
 
@@ -23,11 +24,16 @@ public class FriendTag extends NameTag {
   }
 
   @Override
-  protected RenderableComponent renderableComponent(Entity livingEntity) {
+  protected RenderableComponent getRenderableComponent() {
     if (!addon.configuration().enabled().get())
       return null;
 
     if (!addon.configuration().tag().isEnabled())
+      return null;
+
+    Entity livingEntity = this.entity;
+
+    if (livingEntity == null)
       return null;
 
     if (!(livingEntity instanceof Player))
@@ -45,13 +51,16 @@ public class FriendTag extends NameTag {
   }
 
   @Override
-  public boolean isVisible(Entity livingEntity) {
+  public boolean isVisible() {
     if (!addon.configuration().tag().isEnabled())
       return false;
 
     if (!addon.configuration().tag().getLocation().equals(location))
       return false;
 
-    return addon.isVisible(livingEntity);
+    if (this.entity == null)
+      return false;
+
+    return addon.isVisible(this.entity);
   }
 }

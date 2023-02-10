@@ -52,15 +52,6 @@ public class FriendTag extends NameTag {
 
   @Override
   public boolean isVisible() {
-    if (!addon.configuration().tag().isEnabled())
-      return false;
-
-    if (!addon.configuration().tag().getLocation().equals(location))
-      return false;
-
-    if (this.entity == null)
-      return false;
-
-    return addon.isVisible(this.entity);
+    return super.isVisible() && addon.isVisible(this.entity);
   }
 }

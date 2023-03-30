@@ -134,6 +134,7 @@ run/
 
 # LabyGradle | Addon Plugin
 build-data.txt
+*.assetsroot
 
 # Desktop ini
 desktop.ini

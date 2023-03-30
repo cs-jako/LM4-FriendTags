@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "net.crazy"
-version = "1.2.0"
+version = "2.4.0"
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 
@@ -18,7 +18,7 @@ labyMod {
         description = "With this addon you see a tag above the head of LabyChat Friends"
         minecraftVersion = "*"
         iconUrl = "https://dl.labymod.net/latest/addons/72115a66-1f9b-4cf0-b346-918075847a7d/icon.png"
-        version = "2.3.0"
+        version = "2.4.0"
     }
 
     minecraft {

@@ -1,7 +1,7 @@
 rootProject.name = "friendtags"
 
 pluginManagement {
-    val labyGradlePluginVersion = "0.3.7"
+    val labyGradlePluginVersion = "0.3.20"
     plugins {
         id("net.labymod.gradle") version (labyGradlePluginVersion)
     }

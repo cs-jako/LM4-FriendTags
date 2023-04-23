@@ -1,7 +1,6 @@
 package net.crazy.friendtags.core;
 
 import net.crazy.friendtags.core.enums.NameTagLocation;
-import net.crazy.friendtags.core.events.NameTagEvents;
 import net.crazy.friendtags.core.tags.FriendTag;
 import net.crazy.friendtags.core.tags.StarTag;
 import net.labymod.api.addon.LabyAddon;
@@ -22,26 +21,12 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
     this.registerSettingCategory();
 
     TagRegistry tagRegistry = labyAPI().tagRegistry();
-
-    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.ABOVE_NAME,
-        FriendTag.create(this, NameTagLocation.ABOVE_NAME));
-    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.BELOW_NAME,
-        FriendTag.create(this, NameTagLocation.BELOW_NAME));
-    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.LEFT_TO_NAME,
-        FriendTag.create(this, NameTagLocation.LEFT_OF_NAME));
-    tagRegistry.registerBefore("badge", "friendtags_tag", PositionType.RIGHT_TO_NAME,
-        FriendTag.create(this, NameTagLocation.RIGHT_OF_NAME));
-
-    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.ABOVE_NAME,
-        StarTag.create(this, NameTagLocation.ABOVE_NAME));
-    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.BELOW_NAME,
-        StarTag.create(this, NameTagLocation.BELOW_NAME));
-    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.LEFT_TO_NAME,
-        StarTag.create(this, NameTagLocation.LEFT_OF_NAME));
-    tagRegistry.registerBefore("badge", "friendtags_star", PositionType.RIGHT_TO_NAME,
-        StarTag.create(this, NameTagLocation.RIGHT_OF_NAME));
-
-    this.registerListener(new NameTagEvents(this));
+    for (PositionType positionType : PositionType.values()) {
+      tagRegistry.registerBefore("badge", "friendtags_tag", positionType,
+          FriendTag.create(this, NameTagLocation.getNameTagLocation(positionType)));
+      tagRegistry.registerBefore("badge", "friendtags_star", positionType,
+          StarTag.create(this, NameTagLocation.getNameTagLocation(positionType)));
+    }
   }
 
   @Override

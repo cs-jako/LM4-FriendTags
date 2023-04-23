@@ -43,7 +43,7 @@ public class StarTag extends IconTag {
       return;
 
     this.labyAPI.renderPipeline().renderSeeThrough(entity, () -> {
-      getIcon().render(stack, 16, 0, 8, 8, false, getColor());
+      getIcon().render(stack, 0, 0, 8, 8, false, getColor());
     });
   }
 

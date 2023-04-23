@@ -8,7 +8,6 @@ import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.tags.NameTag;
 import net.labymod.api.client.entity.player.tag.tags.NameTagBackground;
 import net.labymod.api.client.render.font.RenderableComponent;
-import org.jetbrains.annotations.Nullable;
 import java.awt.*;
 
 public class FriendTag extends NameTag {

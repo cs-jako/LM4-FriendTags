@@ -6,8 +6,10 @@ import net.labymod.api.client.component.Component;
 import net.labymod.api.client.entity.Entity;
 import net.labymod.api.client.entity.player.Player;
 import net.labymod.api.client.entity.player.tag.tags.NameTag;
+import net.labymod.api.client.entity.player.tag.tags.NameTagBackground;
 import net.labymod.api.client.render.font.RenderableComponent;
 import org.jetbrains.annotations.Nullable;
+import java.awt.*;
 
 public class FriendTag extends NameTag {
 
@@ -53,5 +55,17 @@ public class FriendTag extends NameTag {
   @Override
   public boolean isVisible() {
     return super.isVisible() && addon.isVisible(this.entity);
+  }
+
+  @Override
+  protected NameTagBackground getCustomBackground() {
+    boolean enabled = addon.configuration().tag().background();
+    NameTagBackground nameTagBackground = super.getCustomBackground();
+
+    if (nameTagBackground == null)
+      nameTagBackground = NameTagBackground.custom(enabled, Color.BLACK.getRGB());
+
+    nameTagBackground.setEnabled(enabled);
+    return nameTagBackground;
   }
 }

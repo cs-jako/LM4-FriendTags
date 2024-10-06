@@ -38,6 +38,7 @@ hs_err_pid*
 .idea/**/encodings.xml
 .idea/codeStyles/
 .idea/sonarlint/
+.idea
 
 # Generated files
 .idea/**/contentModel.xml

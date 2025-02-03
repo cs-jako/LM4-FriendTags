@@ -22,9 +22,9 @@ public class FriendTagsAddon extends LabyAddon<AddonConfiguration> {
 
     TagRegistry tagRegistry = labyAPI().tagRegistry();
     for (PositionType positionType : PositionType.values()) {
-      tagRegistry.registerBefore("badge", "friendtags_tag", positionType,
+      tagRegistry.registerAfter("labymod_role", "friendtags_tag", positionType,
           FriendTag.create(this, NameTagLocation.getNameTagLocation(positionType)));
-      tagRegistry.registerBefore("badge", "friendtags_star", positionType,
+      tagRegistry.registerAfter("labymod_role", "friendtags_star", positionType,
           StarTag.create(this, NameTagLocation.getNameTagLocation(positionType)));
     }
   }
